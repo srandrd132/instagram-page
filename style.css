@@ -1,0 +1,159 @@
+* {
+   padding: 0; margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgb(243. 243. 243);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.telainsta {
+	display: flex;
+   align-items: center;
+   justify-content: start;
+   width: 60%;
+   height: 100vh;
+}
+
+.celular {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+
+.celular img {
+	height: 50rem;
+}
+
+.barralogin {
+	display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.bloco {
+	display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+   background-color: #ffffff;
+   width: 100%;
+   padding: 1.3rem 0;
+   border: 1px solid lightgray;
+}
+
+.bloco1:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram { 
+	height: 3rem;
+	margin: 10px;
+}
+
+.fotoperfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+	 margin: 10px;
+}
+
+.fotoperfil img {
+    height: 6rem;
+}
+
+.continue {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+	 margin: 10px;
+	
+}
+
+.remover {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.nao {
+	color: rgb(160. 160. 160);
+}
+
+.alternar {
+    color: #0095f6;
+}
+
+.bloco3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+@media (max-width: 1024px) {
+    .telainsta {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .telainsta {
+        width: 90%;
+    }
+
+    .celular {
+        display: none;
+    }
+
+    .barralogin {
+        width: 100%;
+    }
+    
+    .bloco1 {
+        border: 1px solid transparent;
+    }
+}
